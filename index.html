@@ -1,0 +1,22 @@
+<!DOCTOTYPE html>
+<html>
+  <body>
+    <h1>entrez le mot de passe trouvé pour finir l'escape game</h1>
+    <form id="login">
+      <input type="password" id="password" required placeholder="mot de passe">
+      <button type="submit">confirmer</button>
+    </form>
+    <script>
+      const form = document.getElementById('login')
+      const pwd = document.getElementById('password')
+      form.addEventListener('submit', function(e) {
+        e.preventDefault()
+        if (pwd === "oecresistance") {
+          alert("bravo, vous avez trouvé, l'escape game est terminé")
+        } else {
+          alert("désolé, le mot de passe est incorrect, veuillez réessayer")
+        }
+      });
+    </script>
+  </body>
+</html>
