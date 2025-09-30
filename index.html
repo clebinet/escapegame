@@ -11,7 +11,7 @@
       const pwd = document.getElementById('password')
       form.addEventListener('submit', function(e) {
         e.preventDefault()
-        if (pwd === "oecresistance") {
+        if (pwd.value === "oecresistance") {
           alert("bravo, vous avez trouvé, l'escape game est terminé")
         } else {
           alert("désolé, le mot de passe est incorrect, veuillez réessayer")
